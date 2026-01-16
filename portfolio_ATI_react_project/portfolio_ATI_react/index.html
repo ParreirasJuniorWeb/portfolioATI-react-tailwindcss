@@ -29,6 +29,7 @@
   <script type="module">
     import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
 
+    async function widget() {
     const widget = await Chatbox.initBubble({
       agentId: 'cmbu8fjl702eqduz6gyhrpv3l',
 
@@ -58,7 +59,10 @@
 
     // or 
     widget.toggle()
+  }
+
+  widget();
+
   </script>
 </body>
-
 </html>

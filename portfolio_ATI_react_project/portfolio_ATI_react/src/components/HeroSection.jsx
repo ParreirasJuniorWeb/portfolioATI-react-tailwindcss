@@ -1,5 +1,6 @@
 import React from 'react';
 import { Home, BookOpen, Headphones, Download, Newspaper, BarChart3, Users, Shield, Zap } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const stats = [
@@ -28,28 +29,28 @@ const HeroSection = () => {
       icon: BookOpen,
       title: 'Tutoriais Completos',
       description: 'Guias passo a passo para configuração de VPN, Cisco Jabber e muito mais',
-      link: '#tutoriais',
+      link: '/tutoriais',
       color: 'bg-primary-500',
     },
     {
       icon: Headphones,
       title: 'Suporte Rápido',
       description: 'Abra chamados e obtenha assistência técnica especializada',
-      link: '#suporte',
+      link: '/suporte',
       color: 'bg-purple-500',
     },
     {
       icon: Download,
       title: 'Downloads',
       description: 'POPs, manuais e softwares essenciais para seu trabalho',
-      link: '#downloads',
+      link: '/downloads',
       color: 'bg-green-500',
     },
     {
       icon: Newspaper,
       title: 'Atualizações',
       description: 'Fique por dentro das últimas notícias e procedimentos',
-      link: '#blog',
+      link: '/blog',
       color: 'bg-orange-500',
     },
   ];
@@ -80,20 +81,20 @@ const HeroSection = () => {
 
             {/* Botões de Ação */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-              <a
-                href="#tutoriais"
+              <Link
+                to="/tutoriais"
                 className="inline-flex items-center px-8 py-4 bg-white text-primary-600 rounded-xl font-semibold hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               >
                 <BookOpen className="w-5 h-5 mr-2" />
                 Explorar Tutoriais
-              </a>
-              <a
-                href="#suporte"
+              </Link>
+              <Link
+                to="/suporte"
                 className="inline-flex items-center px-8 py-4 bg-white/10 text-white rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 backdrop-blur-sm border border-white/20"
               >
                 <Headphones className="w-5 h-5 mr-2" />
                 Falar com Suporte
-              </a>
+              </Link>
             </div>
 
             {/* Cards de Estatísticas */}
@@ -135,9 +136,9 @@ const HeroSection = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
-              <a
+              <Link
                 key={index}
-                href={service.link}
+                to={service.link}
                 className="group bg-white rounded-2xl p-6 shadow-card hover:shadow-hover transition-all duration-300 transform hover:-translate-y-2"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
@@ -167,7 +168,7 @@ const HeroSection = () => {
                     />
                   </svg>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
@@ -185,13 +186,13 @@ const HeroSection = () => {
                 Nossa equipe está pronta para atender você
               </p>
             </div>
-            <a
-              href="#contato"
+            <Link
+              to="/contato"
               className="inline-flex items-center px-8 py-4 bg-white text-primary-600 rounded-xl font-semibold hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <Headphones className="w-5 h-5 mr-2" />
               Falar com Suporte
-            </a>
+            </Link>
           </div>
         </div>
       </section>

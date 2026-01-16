@@ -29,7 +29,7 @@ const VpnPage = () => {
     {
       icon: User,
       title: 'Credenciais de Acesso',
-      description: 'Login de rede (x ou m) e senha do Active Directory',
+      description: 'Login de rede (x ou m) e senha do Active Directory (a senha que utilizamos para ter acesso aos computadores da CAMG)',
     },
     {
       icon: Server,
@@ -57,7 +57,7 @@ const VpnPage = () => {
         'Órgão: SES',
         'Hostname: Nome do dispositivo (padrão D39M)',
         'Grupo de Mobilidade: M_SES_Mobilidade_[1-10]',
-        'Login de rede: Seu x ou m',
+        'Login de rede: Seu x (identidade, x seguido da sequência de dígitos que compõe o seu RG) ou m (MASP/Matrícula, m seguido da sequência de dígitos que compõe o seu número de matrícula na CAMG - se preciso consulte o RH da SES - MG para mais informações)',
         'Nome completo do solicitante',
         'E-mail institucional',
         'Ramal corporativo',
@@ -72,7 +72,7 @@ const VpnPage = () => {
         'E-mail: suporteti.ca@saude.mg.gov.br',
         'Assunto: Solicitação de Acesso VPN',
         'Anexar planilha preenchida',
-        'Informar urgência (se houver)',
+        'Aguardar um retorno da equipe de suporte',
       ],
     },
     {
@@ -82,7 +82,7 @@ const VpnPage = () => {
       details: [
         'Verificar suas informações no sistema',
         'Validar os dados da planilha',
-        'Encaminhar solicitação para a Prodemge/Positivo',
+        'Encaminhar solicitação para a Positivo',
         'Acompanhar o chamado internamente',
       ],
     },
@@ -92,8 +92,8 @@ const VpnPage = () => {
       description: 'A TI enviará e-mails informando:',
       details: [
         'Confirmação do recebimento da solicitação',
-        'Status: "Em análise com a Prodemge"',
-        'Atualizações sobre o andamento',
+        'Status: "Em análise"',
+        'Atualizações sobre o andamento do chamado',
         'Prazo médio de resposta: 24 a 48 horas úteis',
       ],
     },
@@ -105,7 +105,7 @@ const VpnPage = () => {
         'E-mail de confirmação da TI',
         'Manual de instalação e configuração (PDF)',
         'Instruções passo a passo',
-        'Suporte da TI para primeiro acesso',
+        'Se necessário comunique a equipe de suporte TI para obter auxílio em seu primeiro acesso',
       ],
     },
   ];
@@ -140,7 +140,7 @@ const VpnPage = () => {
   const faqs = [
     {
       question: 'Quanto tempo leva para liberar o acesso VPN?',
-      answer: 'O prazo médio é de 24 a 48 horas úteis após o envio da solicitação. A equipe de TI enviará e-mails informando o status do seu chamado. Para dúvidas, entre em contato pelo telefone 0800 525 2001 (ou ramais 3916-0031 / 3916-0027 se estiver na CAMG) ou e-mail suporteti.ca@saude.mg.gov.br.',
+      answer: 'O prazo médio é de 24 a 48 horas úteis após o envio da solicitação. A equipe de TI enviará e-mails informando o status do seu chamado. Para dúvidas, entre em contato pelo telefone/ramal 3916-0031 se estiver na CAMG ou e-mail suporteti.ca@saude.mg.gov.br.',
     },
     {
       question: 'Posso acessar de qualquer computador?',
@@ -148,7 +148,7 @@ const VpnPage = () => {
     },
     {
       question: 'O que fazer se esquecer a senha?',
-      answer: 'Entre em contato com o suporte TI pelo telefone 0800 525 2001 (ou ramais 3916-0031 / 3916-0027 se estiver na CAMG) ou e-mail suporteti.ca@saude.mg.gov.br para solicitar reset de senha.',
+      answer: 'Entre em contato com o suporte TI pelo telefone/ramal 3916-0031 se estiver na CAMG ou e-mail suporteti.ca@saude.mg.gov.br para solicitar reset de senha. Observação: O reset de senha deverá ser feito apenas presencialmente por medidas de segurança e sob as diretrizes da Lei LGPD (Lei Geral de Porteção de Dados).',
     },
     {
       question: 'Preciso estar conectado à rede da SES?',
@@ -439,7 +439,7 @@ const VpnPage = () => {
                 className="inline-flex items-center px-8 py-4 bg-white/10 text-white rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 backdrop-blur-sm border border-white/20"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                0800 525 2001
+                (31) 39160031 ou 0800 525 2001 (teletrabalho)
               </a>
             </div>
           </div>

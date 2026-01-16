@@ -102,11 +102,6 @@ const SuportePage = () => {
       ramal: '(31) 3916-0031',
     },
     {
-      name: 'Caio Feliphe Da Silva Martins',
-      email: 'caio.martins@saude.mg.gov.br',
-      ramal: '(31) 3916-0031',
-    },
-    {
       name: 'João Victor Parreiras Soares (Estagiário)',
       email: 'joao.soares@saude.mg.gov.br',
       ramal: '(31) 3916-0031',
@@ -129,6 +124,12 @@ const SuportePage = () => {
       name: 'Alexander Spelta',
       cargo: 'Analista de Redes',
       email: 'alexander.spelta@saude.mg.gov.br',
+      ramal: '(31) 3916-0031',
+    },
+    {
+      name: 'Caio Feliphe Da Silva Martins',
+      cargo: 'Analista de Redes',
+      email: 'caio.martins@saude.mg.gov.br',
       ramal: '(31) 3916-0031',
     },
   ];
@@ -495,7 +496,7 @@ const SuportePage = () => {
                 Regionais: Passos, Patos de Minas, Governador Valadares, Farmácias de Minas e outras
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-6 max-w-6xl mx-auto py-5">
               {equipeInfraestrutura.map((member, index) => (
                 <div
                   key={index}
@@ -695,7 +696,7 @@ const SuportePage = () => {
                 className="inline-flex items-center px-8 py-4 bg-white/10 text-white rounded-xl font-semibold hover:bg-white/20 transition-all duration-300 backdrop-blur-sm border border-white/20"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                0800 525 2001
+                (31) 39160031 ou 0800 525 2001
               </a>
             </div>
           </div>
